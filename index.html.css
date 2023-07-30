@@ -1,0 +1,58 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 1800px;
+    margin: 0 auto; 
+    padding: 0 20px; 
+    box-sizing: border-box; 
+}
+
+
+.mockup-container {
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+
+.mockup {
+    width: calc(33.33% - 10px); 
+    height: 240px;
+    background-color: gray; 
+    position: relative; 
+    margin-bottom: 20px; 
+    box-sizing: border-box; 
+}
+
+.shaded-section {
+    width: 150px; 
+    height: 35px; 
+    background-color: orange; 
+    position: absolute; 
+    top: 0px; 
+    right: 0px; 
+    border: 1px solid black; 
+}
+
+@media (max-width: 1023px) {
+    .mockup {
+        width: calc(50% - 20px);
+    }
+    
+    .mockup:nth-child(1n+3) {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .mockup {
+        width: calc(150% - 20px); 
+    }
+}
+
